@@ -59,7 +59,9 @@ tasks.withType(Test) {
         }
     }
 }
-
+task smoke_tests(type: Test) {
+    useJUnitPlatform{ include("smoke")}
+}
 test {
     useJUnitPlatform()
     systemProperties(System.getProperties())

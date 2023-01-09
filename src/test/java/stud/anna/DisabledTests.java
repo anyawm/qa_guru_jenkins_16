@@ -7,7 +7,11 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @Tag("smoke")
+@Tag("simple")
+
 public class DisabledTests {
+
+
     @Test
     @Disabled
     void test1 () {
